@@ -8,6 +8,7 @@ import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 
 public class ModBiomes {
+
     public static void register() {
         // Registers biomes to Minecraft registry
         Registry.register(BuiltinRegistries.BIOME, AlderForestBiome.KEY.getValue(), AlderForestBiome.create());

@@ -1,6 +1,7 @@
 package net.calibermc.naturescanvas.world.biomes;
 
 import net.calibermc.naturescanvas.NaturesCanvas;
+import net.calibermc.naturescanvas.world.ModBiomeEffects;
 import net.calibermc.naturescanvas.world.ModBiomes;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
@@ -25,14 +26,14 @@ public class CedarForestBiome {
         // For example, setting the color to 0x00FF0000 is the same as rgb(255, 0, 0).
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
-                .temperature(0.8f)
-                .downfall(0.4f)
+                .temperature(ModBiomeEffects.CONIFEROUS_FOREST_TEMPERATURE) //Default is .3f
+                .downfall(ModBiomeEffects.CONIFEROUS_FOREST_DOWNFALL) //Default is .8f
                 .effects(new BiomeEffects.Builder()
-                        .waterColor(0x001397dd)
-                        .skyColor(0x0052baf2)
-                        .grassColor(0x002abf3d)
-                        .fogColor(0x00acd8ef)
-                        .waterFogColor(0x00acd8ef)
+                        .waterColor(ModBiomeEffects.CONIFEROUS_FOREST_WATER_COLOR)
+                        .skyColor(ModBiomeEffects.CONIFEROUS_FOREST_SKY_COLOR)
+                        .grassColor(ModBiomeEffects.CONIFEROUS_FOREST_GRASS_COLOR)
+                        .fogColor(ModBiomeEffects.CONIFEROUS_FOREST_FOG_COLOR)
+                        .waterFogColor(ModBiomeEffects.CONIFEROUS_FOREST_WATER_FOG_COLOR)
                         .moodSound(BiomeMoodSound.CAVE)
                         .music(null)
                         .build())

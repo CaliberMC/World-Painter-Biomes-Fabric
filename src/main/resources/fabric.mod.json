@@ -3,14 +3,16 @@
   "id": "naturescanvas",
   "version": "${version}",
   "name": "Natures Canvas",
-  "description": "",
-  "authors": [],
+  "description": "A collection of real-life biomes for Minecraft",
+  "authors": [
+    "Charm8er"
+  ],
   "contact": {
     "repo": "https://github.com/CaliberMC/Natures-Canvas"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/naturescanvas/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "net.calibermc.naturescanvas.NaturesCanvas"

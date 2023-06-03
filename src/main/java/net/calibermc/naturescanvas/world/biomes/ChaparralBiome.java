@@ -1,6 +1,7 @@
 package net.calibermc.naturescanvas.world.biomes;
 
 import net.calibermc.naturescanvas.NaturesCanvas;
+import net.calibermc.naturescanvas.world.ModBiomeEffects;
 import net.calibermc.naturescanvas.world.ModBiomes;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
@@ -25,14 +26,14 @@ public class ChaparralBiome {
         // For example, setting the color to 0x00FF0000 is the same as rgb(255, 0, 0).
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
-                .temperature(0.8f)
-                .downfall(0.4f)
+                .temperature(ModBiomeEffects.WARM_TEMPERATURE + .25f) //Default is 1.2f
+                .downfall(ModBiomeEffects.WARM_DOWNFALL + .1f) //Default is 0.2f
                 .effects(new BiomeEffects.Builder()
-                        .waterColor(0x001397dd)
-                        .skyColor(0x0052baf2)
-                        .grassColor(0x002abf3d)
-                        .fogColor(0x00acd8ef)
-                        .waterFogColor(0x00acd8ef)
+                        .waterColor(ModBiomeEffects.WARM_WATER_COLOR)
+                        .skyColor(ModBiomeEffects.WARM_SKY_COLOR)
+                        .grassColor(ModBiomeEffects.WARM_GRASS_COLOR)
+                        .fogColor(ModBiomeEffects.WARM_FOG_COLOR)
+                        .waterFogColor(ModBiomeEffects.WARM_WATER_FOG_COLOR)
                         .moodSound(BiomeMoodSound.CAVE)
                         .music(null)
                         .build())
