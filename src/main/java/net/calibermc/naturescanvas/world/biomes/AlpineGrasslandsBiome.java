@@ -1,6 +1,7 @@
 package net.calibermc.naturescanvas.world.biomes;
 
 import net.calibermc.naturescanvas.NaturesCanvas;
+import net.calibermc.naturescanvas.world.ModBiomeEffects;
 import net.calibermc.naturescanvas.world.ModBiomes;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
@@ -24,15 +25,15 @@ public class AlpineGrasslandsBiome {
         // and alpha is ignored so you can leave it at 00.
         // For example, setting the color to 0x00FF0000 is the same as rgb(255, 0, 0).
         return new Biome.Builder()
-                .precipitation(Biome.Precipitation.RAIN)
-                .temperature(0.8f)
-                .downfall(0.4f)
+                .precipitation(Biome.Precipitation.SNOW)
+                .temperature(ModBiomeEffects.COLD_TEMPERATURE) //Default is 0.0f
+                .downfall(ModBiomeEffects.COLD_DOWNFALL) //Default is 0.9f
                 .effects(new BiomeEffects.Builder()
-                        .waterColor(0x001397dd)
-                        .skyColor(0x0052baf2)
-                        .grassColor(0x002abf3d)
-                        .fogColor(0x00acd8ef)
-                        .waterFogColor(0x00acd8ef)
+                        .waterColor(ModBiomeEffects.COLD_WATER_COLOR)
+                        .skyColor(ModBiomeEffects.COLD_SKY_COLOR)
+                        .grassColor(ModBiomeEffects.COLD_GRASS_COLOR)
+                        .fogColor(ModBiomeEffects.COLD_FOG_COLOR)
+                        .waterFogColor(ModBiomeEffects.COLD_WATER_FOG_COLOR)
                         .moodSound(BiomeMoodSound.CAVE)
                         .music(null)
                         .build())

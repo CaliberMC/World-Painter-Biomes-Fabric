@@ -20,34 +20,35 @@ public class NaturesCanvasRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube, RegistryKey<Biome>>> mapper) {
         // Adds biomes, with generation settings similar to the Plains biome
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AlderForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AlpineGrasslandsBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AlpineLakeBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AlpineTundraBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AshForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, AspenGroveBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, CedarForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, ChaparralBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, DesertScrubBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, ElmForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, FirForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, HighlandsBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, HornbeamForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, LarchForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, LindenForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, MapleForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, MixedForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, OakForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, PineForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, AlderForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FROZEN_PEAKS, AlpineGrasslandsBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FROZEN_PEAKS, AlpineLakeBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FROZEN_PEAKS, AlpineTundraBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, AshForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, AspenGroveBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, CedarForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SAVANNA, ChaparralBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SAVANNA_PLATEAU, DesertScrubBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, ElmForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA, FirForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.WINDSWEPT_HILLS, HighlandsBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, HornbeamForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_PINE_TAIGA, LarchForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, LindenForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, MapleForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.FOREST, MixedForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.DARK_FOREST, OakForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_PINE_TAIGA, PineForestBiome.KEY);
         this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, PrairieBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, RainforestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, RedwoodForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, SaltMarshBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, ShrublandsBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, SpruceForestBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, SteppeBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, TundraBiome.KEY);
-        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, WetlandsBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.JUNGLE, RainforestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA, RedwoodForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.MANGROVE_SWAMP, SaltMarshBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SAVANNA, ShrublandsBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA, SpruceForestBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SAVANNA, SteppeBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SNOWY_PLAINS, TundraBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.PLAINS, VolcanicPlainsBiome.KEY);
+        this.addBiomeSimilar(mapper, BiomeKeys.SWAMP, WetlandsBiome.KEY);
 
     }
 }

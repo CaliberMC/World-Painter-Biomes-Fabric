@@ -1,3 +1,38 @@
 # Project exclude paths
 /.gradle/
 /build/
+/run/saves/Test 1/playerdata/1b8d41ee-20e2-3849-a434-0d774a740ae1.dat_old
+/run/saves/Test 1/advancements/1b8d41ee-20e2-3849-a434-0d774a740ae1.json
+/run/saves/Test 1/stats/1b8d41ee-20e2-3849-a434-0d774a740ae1.json
+/run/logs/2023-06-03-2.log.gz
+/run/logs/2023-06-03-3.log.gz
+/run/logs/2023-06-03-4.log.gz
+/run/saves/Test 1/playerdata/ccf0c278-c21f-3ec3-a87c-05202673a5dd.dat
+/run/saves/Test 1/playerdata/ccf0c278-c21f-3ec3-a87c-05202673a5dd.dat_old
+/run/saves/Test 1/advancements/ccf0c278-c21f-3ec3-a87c-05202673a5dd.json
+/run/saves/Test 1/stats/ccf0c278-c21f-3ec3-a87c-05202673a5dd.json
+/run/resourcepacks/CRRP-1.19.2-1.0.1.zip
+/run/logs/debug-3.log.gz
+/run/logs/debug-4.log.gz
+/run/logs/debug-5.log.gz
+/run/saves/Test 1/playerdata/edb8d6a3-e33d-3ebb-8b42-fbfd789b2d20.dat
+/run/saves/Test 1/playerdata/edb8d6a3-e33d-3ebb-8b42-fbfd789b2d20.dat_old
+/run/saves/Test 1/advancements/edb8d6a3-e33d-3ebb-8b42-fbfd789b2d20.json
+/run/saves/Test 1/stats/edb8d6a3-e33d-3ebb-8b42-fbfd789b2d20.json
+/.idea/uiDesigner.xml
+/.idea/compiler.xml
+/run/logs/debug.log
+/run/data/fabricDefaultResourcePacks.dat
+/.idea/gradle.xml
+/run/config/fabric/indigo-renderer.properties
+/.idea/jarRepositories.xml
+/run/logs/latest.log
+/.idea/runConfigurations/Minecraft_Client.xml
+/.idea/runConfigurations/Minecraft_Server.xml
+/.idea/misc.xml
+/.idea/modules/Natures-Canvas.main.iml
+/.idea/modules/Natures-Canvas.test.iml
+/run/config/terrablender.toml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/run/saves/Test 1/playerdata/1b8d41ee-20e2-3849-a434-0d774a740ae1.dat

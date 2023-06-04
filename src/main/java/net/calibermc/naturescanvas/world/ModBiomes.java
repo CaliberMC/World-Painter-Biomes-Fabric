@@ -39,6 +39,7 @@ public class ModBiomes {
         Registry.register(BuiltinRegistries.BIOME, SpruceForestBiome.KEY.getValue(), SpruceForestBiome.create());
         Registry.register(BuiltinRegistries.BIOME, SteppeBiome.KEY.getValue(), SteppeBiome.create());
         Registry.register(BuiltinRegistries.BIOME, TundraBiome.KEY.getValue(), TundraBiome.create());
+        Registry.register(BuiltinRegistries.BIOME, VolcanicPlainsBiome.KEY.getValue(), VolcanicPlainsBiome.create());
         Registry.register(BuiltinRegistries.BIOME, WetlandsBiome.KEY.getValue(), WetlandsBiome.create());
     }
 

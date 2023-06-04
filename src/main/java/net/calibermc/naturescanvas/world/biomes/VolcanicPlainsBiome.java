@@ -12,8 +12,8 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 
-public class RainforestBiome {
-    public static final RegistryKey<Biome> KEY = RegistryKey.of(Registry.BIOME_KEY, new Identifier(NaturesCanvas.MOD_ID, "rainforest"));
+public class VolcanicPlainsBiome {
+    public static final RegistryKey<Biome> KEY = RegistryKey.of(Registry.BIOME_KEY, new Identifier(NaturesCanvas.MOD_ID, "volcanic_plains"));
 
     public static Biome create() {
         SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
@@ -26,12 +26,12 @@ public class RainforestBiome {
         // For example, setting the color to 0x00FF0000 is the same as rgb(255, 0, 0).
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
-                .temperature(ModBiomeEffects.WARM_TEMPERATURE - 0.15f) //Default is 1.2f
-                .downfall(ModBiomeEffects.WARM_DOWNFALL + 0.7f)  //Default is 0.2f
+                .temperature(ModBiomeEffects.WARM_TEMPERATURE - 0.25f) //Default is 1.2f
+                .downfall(ModBiomeEffects.WARM_DOWNFALL + 0.3f)  //Default is 0.2f
                 .effects(new BiomeEffects.Builder()
                         .waterColor(ModBiomeEffects.WARM_WATER_COLOR)
                         .skyColor(ModBiomeEffects.WARM_SKY_COLOR)
-                        .grassColor(ModBiomeEffects.RAINFOREST_GRASS_COLOR)
+                        .grassColor(ModBiomeEffects.WARM_GRASS_COLOR)
                         .fogColor(ModBiomeEffects.WARM_FOG_COLOR)
                         .waterFogColor(ModBiomeEffects.WARM_WATER_FOG_COLOR)
                         .moodSound(BiomeMoodSound.CAVE)
